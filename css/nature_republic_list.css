@@ -228,15 +228,15 @@ li {
     width: 295px;
     height: 54px;
     font-size: 18px;
-    font-weight: 200;
-    color: #333;
+    font-weight: 300;
+    color: #555;
     text-align: center;
 }
 
 .best_item .d {
     font-size: 19px;
     color: #9b9b9b;
-    font-weight: 200;
+    font-weight: 300;
     text-align: center;
     padding-top: 5px;
 }
@@ -401,7 +401,7 @@ li {
 .bottom p {
     font-size: 14px;
     color: #555;
-    font-weight: 200;
+    font-weight: 300;
 }
 
 .bottom ul {
@@ -414,15 +414,15 @@ li {
 
 .bottom a {
     font-size: 14px;
-    color: #5e5e5e;
-    font-weight: 200;
+    color: #555;
+    font-weight: 300;
 }
 
 .bottom p {
     display: inline-block;
-    color: #5e5e5e;
+    color: #555;
     font-size: 14px;
-    font-weight: 200;
+    font-weight: 300;
 }
 
 /*===================
@@ -440,7 +440,7 @@ footer {
 footer p {
     padding-top: 40px;
     font-size: 14px;
-    font-weight: 200;
+    font-weight: 300;
     color: #555;
     line-height: 1.8;
 }

@@ -175,7 +175,7 @@ li {
 
 .best_title p {
     font-size: 16px;
-    color: #7e7e7e;
+    color: #a0a0a0;
     font-weight: 300;
     padding-bottom: 110px;
 }
@@ -223,7 +223,7 @@ li {
 }
 
 .best .clearfix h3 {
-    color: #474747;
+    color: #555;
     font-weight: 300;
     font-size: 18px;
     display: table-cell;
@@ -281,7 +281,7 @@ li {
 
 .new_title p {
     font-size: 16px;
-    color: #7e7e7e;
+    color: #a0a0a0;
     font-weight: 300;
     padding-bottom: 110px;
 }
@@ -329,8 +329,8 @@ li {
 }
 
 .new .clearfix h3 {
-    color: #474747;
-    font-weight: 100;
+    color: #555;
+    font-weight: 300;
     font-size: 18px;
     display: table-cell;
     height: 54px;
@@ -387,7 +387,7 @@ li {
 
 .product_title p {
     font-size: 16px;
-    color: #7e7e7e;
+    color: #a0a0a0;
     font-weight: 300;
 }
 
@@ -522,7 +522,7 @@ li {
 
 .ingre_title p {
     font-size: 16px;
-    color: #7e7e7e;
+    color: #a0a0a0;
     font-weight: 300;
     padding-bottom: 165px;
 }
@@ -550,7 +550,7 @@ li {
 }
 
 .ingre_wrap p {
-    color: #929292;
+    color: #a0a0a0;
     font-size: 14px;
     font-weight: 300;
     margin-top: 10px;
@@ -584,7 +584,7 @@ li {
 .event_title p {
     font-size: 15px;
     font-weight: 300;
-    color: #919191;
+    color: #a0a0a0;
     padding-left: 10px;
     margin-bottom: 30px;
 }
@@ -644,7 +644,7 @@ li {
 .news_title p {
     font-size: 15px;
     font-weight: 300;
-    color: #919191;
+    color: #a0a0a0;
     padding-left: 10px;
     margin-bottom: 30px;
 }
@@ -660,7 +660,7 @@ li {
 }
 
 .news_wrap h3 {
-    color: #343434;
+    color: #555;
     font-size: 17px;
     font-weight: 400;
     padding: 20px 20px 12px 20px;
@@ -747,13 +747,13 @@ li {
 
 .bottom a {
     font-size: 14px;
-    color: #5e5e5e;
+    color: #555;
     font-weight: 300;
 }
 
 .bottom p {
     display: inline-block;
-    color: #5e5e5e;
+    color: #555;
     font-size: 14px;
     font-weight: 300;
 }
