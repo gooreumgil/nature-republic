@@ -44,3 +44,25 @@ li {list-style: none;}
 .col-10 {width: 83.33%;}
 .col-11 {width: 91.66%;}
 .col-12 {width: 100%;}
+
+/*===================
+	GRID SYSTEM
+===================*/
+
+#id_color {
+    color: #7ebb34;
+}
+
+.main_font {
+    font-family: 'Helvetica Neue', sans-serif;
+    font-weight: 300;
+    color: #4a4a4a;
+    font-size: 36px;
+}
+
+.sub_font {
+    font-family: 'Noto Sans KR', sans-serif;
+    color: #9c9c9c;
+    font-size: 16px;
+    font-weight: 300;
+}
