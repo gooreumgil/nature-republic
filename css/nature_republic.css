@@ -1,5 +1,5 @@
 /*===================
-	  CSS RESET 
+	  CSS RESET
 ===================*/
 
 @import url(//fonts.googleapis.com/earlyaccess/nanumgothic.css);
@@ -20,7 +20,7 @@ li {
 }
 
 /*===================
-	  HEADER 
+	  HEADER
 ===================*/
 
 .head {
@@ -176,7 +176,7 @@ li {
 .best_title p {
     font-size: 16px;
     color: #7e7e7e;
-    font-weight: 200;
+    font-weight: 300;
     padding-bottom: 110px;
 }
 
@@ -231,7 +231,7 @@ li {
     vertical-align: bottom;
     width: 295px;
     padding: 0 10px 5px 10px;
-    
+
 }
 
 .best .col-3 p {
@@ -337,7 +337,7 @@ li {
     vertical-align: bottom;
     width: 295px;
     padding: 0 10px 5px 10px;
-    
+
 }
 
 .new .col-3 p {
@@ -415,7 +415,7 @@ li {
 
 .product .item_li1:hover {
     background-image: url(../imgs/product/skin_care_hover.png);
-} 
+}
 
 .product .item_li1 .cursor1 {
     position: absolute;
@@ -425,8 +425,8 @@ li {
     left: 8px;
     pointer-events: auto;
     border: 0;
-    
-}   
+
+}
 
 .product .item_li2  {
     background-image: url(../imgs/product/body_hair.png);
@@ -437,7 +437,7 @@ li {
     right: -208px;
     top: -8px;
     pointer-events: none;
-} 
+}
 
 .product .item_li2:hover {
     background-image: url(../imgs/product/body_hair_hover.png);
@@ -676,7 +676,7 @@ li {
 
 
 /*===================
-	  INSTAGRAM 
+	  INSTAGRAM
 ===================*/
 
 .insta {
@@ -725,7 +725,7 @@ li {
 
 
 /*===================
-	  BOTTOM 
+	  BOTTOM
 ===================*/
 
 .bottom {
