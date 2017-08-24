@@ -1,0 +1,540 @@
+/*===================
+	  CSS RESET 
+===================*/
+
+@import url(//fonts.googleapis.com/earlyaccess/nanumgothic.css);
+@import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
+* {
+    padding: 0;
+    border: 0;
+    margin: 0;
+    letter-spacing: 0.025em;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+
+/*===================
+	  HEADER
+===================*/
+
+.head {
+    width: 100%;
+    margin: 0 auto;
+    border-bottom: 1px solid #efefef;
+
+}
+
+.head nav {
+    max-width: 1260px;
+    margin: 0 auto;
+}
+
+.head nav::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.head .logo {
+    width: 185px;
+    height: 15px;
+    float: left;
+    margin: 35px 18px 35px 10px;
+}
+
+.menu {
+    float: left;
+}
+
+.menu::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.menu li {
+    font-family: 'Nanum Gothic', sans-serif;
+    font-weight: 500;
+    display: inline-block;
+    margin: 33px 18px;
+    font-size: 16px;
+    color: #6f6f6f !important;
+    float: left;
+}
+
+.menu li a {
+    color: #6f6f6f;
+}
+
+.icon {
+    float: right;
+}
+
+.icon::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.icon li {
+    float: left;
+}
+
+.icon .a1 {
+    margin: 32px 14px;
+}
+
+.icon .a2 {
+    margin: 28px 14px;
+}
+
+.icon .a3 {
+    margin: 32px 10px 32px 14px;
+}
+
+
+/*===================
+	  PRODUCT
+===================*/
+
+.product {
+    font-family: 'Noto Sans KR', sans-serif;
+    margin-top: 60px;
+}
+
+.product_view {
+    max-width: 1260px;
+    margin: 0 auto;
+}
+
+.product_view .thumbnail {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.product_view .col-7 {
+    height: 635px;
+    position: relative;
+    overflow: hidden;
+}
+
+.product_view .col-7 img {
+    width: 100%;
+}
+
+thumb_wrap {
+    text-align: center;
+}
+
+.col-7 .thumbnail{
+    left: 0px;
+    bottom: 0px;
+    position: absolute;
+    width: 100%;
+}
+.col-7 .thumbnail a {
+    display: block;
+    height: 71px;
+}
+
+.thumbnail .thumb_li {
+    display: inline-block;
+    margin: 0 5px;
+    border: 1px solid #efefef;
+}
+
+.thumbnail .thumb_li:hover {
+    display: inline-block;
+    margin: 0 5px;
+    border: 1px solid #ababab;
+}
+
+.product_view nav {
+    margin-top: 12px;
+}
+
+.product_view .top_nav p {
+    display: inline-block;
+    font-size: 16px;
+    color: #6a6969;
+    font-weight: 200;
+}
+
+.product_view .col-5 h2 {
+    font-size: 42px;
+    color: #444;
+    font-weight: 400;
+    margin-top: 10px;
+}
+
+.product_view .col-5 h3 {
+    font-size: 24px;
+    color: #555;
+    font-weight: 100;
+    margin-top: 12px;
+}
+
+.product_view .product_sub p {
+    font-size: 14px;
+    color: #848484;
+    font-weight: 100;
+    margin-top: 20px;
+}
+
+.product_view .price {
+    margin-top: 25px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #efefef;
+}
+
+.product_view .price p {
+    display: inline-block;
+    font-size: 14px;
+    color: #676767;
+    font-weight: 100;
+    margin-top: 3px;
+    margin-bottom: 3px;  
+}
+
+.product_view .price .a {
+    margin-right: 40px;
+    font-size: 16px;
+    color: #555;
+    font-weight: 100;
+}
+
+.product_view .price span {
+    font-size: 16px;
+    color: #555;
+    font-weight: 100;
+    text-decoration: line-through;
+}
+
+.product_view .price .won {
+    font-size: 16px;
+    color: #8bc545;
+    font-weight: 100;
+    text-decoration: none;
+}
+
+.product_view .info {
+    padding: 20px 0;
+    border-bottom: 1px solid #efefef;
+}
+
+.product_view .info div {
+    display: inline-block;
+}
+
+.product_view .info p {
+    display: inline-block;
+    color: #555555;
+    font-weight: 100;
+    font-size: 16px;
+    margin: 3px 0;
+}
+
+.product_view .info .a {
+    margin-right: 40px;
+}
+
+.product_view .number {
+    margin-top: 26px;
+}
+
+.product_view .number p {
+    font-size: 16px;
+    color: #676767;
+    font-weight: 100;
+}
+
+.product_view .number span {
+    display: inline-block;
+    padding-left: 23px;
+    padding-right: 5px;
+    margin-left: 14px;
+    padding-bottom: 2px;
+    border-bottom: 1px solid #eaeaea;
+}
+
+.product_view .number .a {
+    margin-top: 10px;
+}
+
+.product_view .number .total_price {
+    font-size: 28px;
+    color: #8bc545;
+    font-weight: 400;
+    border: 0px;
+    margin-left: 5px;
+}
+
+.button {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.button ul li {
+    line-height: 66px;
+}
+
+.button ul .like img {
+    display: block;
+    margin-top: 20px;
+}
+
+.button ul li img {
+    margin-top: 0;
+}
+
+.button ul li div {
+    height: 66px;
+    background-color: #f3f3f3;
+}
+
+.button .col-2 {
+    padding-left: 0px;
+    padding-right: 15px;
+}
+
+.button .col-2 img {
+    margin-top: 10px;
+}
+
+.button .col-4 {
+    padding-left: 0;
+    padding-right: 15px;
+}
+
+.button .col-6 {
+    background-color: #8bc545;
+}
+
+.button .col-6 div {
+    background-color: #8bc545;
+}
+
+.button .col-6 div p {
+    color: #fff;
+}
+
+.button ul li a, 
+.button ul li p {
+    display: inline-block;
+    font-size: 18px;
+    color: #444;
+    font-weight: 200;
+}
+
+/*===================
+    RELATED ITEM
+===================*/
+
+.related_item {
+    font-family: 'Noto Sans KR', sans-serif;
+    max-width: 1260px;
+    margin: 0 auto;
+    margin-top: 120px;
+    padding-top: 35px;
+    border-top: 1px solid #efefef;
+    text-align: center;
+
+}
+
+.related_item div {
+    margin-bottom: 40px;
+}
+
+.related_item div h3 {
+    font-size: 20px;
+    color: #6a6969;
+    font-weight: 200;
+    margin-left: 5px;
+    text-align: left;
+}
+
+.related_wrap img {
+    height: 100%;
+    width: 100%;
+}
+
+.related_wrap .col-3 p {
+    font-size: 16px;
+    color: #636363;
+    font-weight: 200;
+    padding: 0 10px;
+}
+
+/*===================
+	  DETAIL
+===================*/
+
+.detail {
+    font-family: 'Noto Sans KR', sans-serif;
+    text-align: center;
+    max-width: 1260px;
+    margin: 0 auto;
+    margin-top: 90px;
+}
+
+.detail .detail_wrap .col-3 {
+    padding: 0 4px;
+}
+
+.detail .detail_wrap .first{
+    background-color: #8bc545;
+}
+
+.detail .detail_wrap .first a {
+    color: #fff;
+}
+
+.detail .detail_wrap div {
+    background-color: #f3f3f3;
+}
+
+.detail .detail_wrap div:hover{
+    background-color: #8bc545;
+}
+
+.detail .detail_wrap div:hover > a{
+    color: #fff;
+}
+
+.detail .detail_wrap a {
+    display: inline-block;
+    font-size: 18px;
+    color: #333;
+    font-weight: 200;
+    padding: 25px 0;
+}
+
+.detail .item_info {
+    margin: 90px 0;
+}
+
+.detail .item_info div {
+    display: inline-block;
+}
+
+.detail .item_info img {
+    width: 100%;
+    height: 100%;
+}
+
+/*===================
+    CATEGORY BEST
+===================*/
+
+.category_best {
+    max-width: 1260px;
+    margin: 0 auto;
+    font-family: 'Noto Sans KR', sans-serif;
+    text-align: center;
+    margin-top: 120px;
+    padding-top: 35px;
+    border-top: 1px solid #efefef;
+}
+
+.category_best div {
+    margin-bottom: 40px;
+}
+
+.category_best div h3 {
+    font-size: 20px;
+    color: #6a6969;
+    font-weight: 200;
+    margin-left: 5px;
+    text-align: left;
+}
+
+.category_best .col-3 p {
+    font-size: 16px;
+    color: #636363;
+    font-weight: 200;
+    padding: 0 10px;
+}
+
+.category_best .col-3 img {
+    height: 100%;
+    width: 100%;
+}
+
+/*===================
+	  BOTTOM
+===================*/
+
+.bottom {
+    width: 100%;
+    margin: 0 auto;
+    padding: 15px 0;
+    text-align: center;
+    border-top: 1px solid #efefef;
+    border-bottom: 1px solid #efefef;
+    font-family: 'Noto Sans KR', sans-serif;
+    margin-top: 100px;
+}
+
+.bottom p {
+    font-size: 14px;
+    color: #555;
+    font-weight: 200;
+}
+
+.bottom ul {
+    display: block;
+}
+
+.bottom li {
+    display: inline-block;
+}
+
+.bottom a {
+    font-size: 14px;
+    color: #5e5e5e;
+    font-weight: 200;
+}
+
+.bottom p {
+    display: inline-block;
+    color: #5e5e5e;
+    font-size: 14px;
+    font-weight: 200;
+}
+
+/*===================
+	  FOOTER
+===================*/
+
+footer {
+    font-family: 'Noto Sans KR', sans-serif;
+    height: 309px;
+    max-width: 1260px;
+    margin: auto;
+    text-align: center;
+}
+
+footer p {
+    padding-top: 40px;
+    font-size: 14px;
+    font-weight: 200;
+    color: #555;
+    line-height: 1.8;
+}
+
+footer img {
+    display: block;
+    margin: auto;
+}
+
+footer .a {
+    margin-top: 42px;
+    margin-bottom: 25px;
+}

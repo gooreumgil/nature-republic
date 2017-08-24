@@ -1,0 +1,789 @@
+/*===================
+	  CSS RESET 
+===================*/
+
+@import url(//fonts.googleapis.com/earlyaccess/nanumgothic.css);
+@import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
+* {
+    padding: 0;
+    border: 0;
+    margin: 0;
+    letter-spacing: 0.025em;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+/*===================
+	  HEADER 
+===================*/
+
+.head {
+    max-width: 1260px;
+    margin: 0 auto;
+}
+
+.head nav::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.head .logo {
+    width: 185px;
+    height: 15px;
+    float: left;
+    margin: 35px 18px 35px 10px;
+}
+
+.menu {
+    float: left;
+}
+
+.menu::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.menu li  {
+    font-family: 'Nanum Gothic', sans-serif;
+    font-weight: 500;
+    display: inline-block;
+    margin: 33px 18px;
+    font-size: 16px;
+    color: #6f6f6f;
+    float: left;
+}
+
+.menu li a {
+    color: #6f6f6f;
+}
+
+.icon {
+    float: right;
+}
+
+.icon::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.icon li {
+    float: left;
+}
+
+.icon .a1 {
+    margin: 32px 14px;
+}
+
+.icon .a2 {
+    margin: 28px 14px;
+}
+
+.icon .a3 {
+    margin: 32px 10px 32px 14px;
+}
+
+/*===================
+	  BANNER
+===================*/
+
+.banner {
+    width: 100%;
+    height: 668px;
+    position: relative;
+    background-image: url('../imgs/banner_bg_02.png');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+}
+
+.banner h1 {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 38px;
+    font-weight: 100;
+    text-align: center;
+    color: white;
+    padding-top: 256px;
+}
+
+.banner a {
+    display: block;
+    width: 168px;
+    font-family: 'Noto Sans KR', sans-serif;
+    color: white;
+    font-size: 17px;
+    font-weight: 300;
+    margin: auto;
+    margin-top: 30px;
+    padding: 8px 0px;
+    border: 1px solid white;
+    text-align: center;
+    border-radius: 25px;
+}
+
+.banner .wrapper-arrow {
+    display: block;
+    height: 100%;
+    margin: auto;
+    max-width: 1260px;
+    position: relative;
+    padding-top:
+}
+
+.banner .arrow-left {
+    position: absolute;
+    left: 83px;
+    top: 280px;
+}
+
+.banner .arrow-right {
+    position: absolute;
+    right: 83px;
+    top: 280px;
+}
+
+.banner span {
+    font-weight: 400;
+}
+
+/*===================
+	  BEST ITEM
+===================*/
+
+.best {
+    max-width: 1260px;
+    margin: 0 auto;
+    font-family: 'Noto Sans KR', sans-serif;
+    text-align: center;
+}
+
+.best h2 {
+    font-size: 34px;
+    font-weight: 100;
+    padding: 150px 0 10px 0;
+    color: #555;
+}
+
+.best_title p {
+    font-size: 16px;
+    color: #7e7e7e;
+    font-weight: 200;
+    padding-bottom: 110px;
+}
+
+.best .clearfix img {
+    height: 100%;
+    width: 100%;
+}
+
+.best .col-3 {
+    border-right: 1px solid #eaeaea;
+    position: relative;
+}
+
+.best .col-3:last-child {
+    border: 0;
+}
+
+.best .clearfix .ordering {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: 999;
+    text-align: left;
+}
+
+.best .col-3 .a {
+    display: inline-block;
+    padding-bottom: 2px;
+    border-bottom: 2px solid rgba(150, 201, 88, 0.7);
+    font-size: 16px;
+    font-weight: 400;
+    color: #96c958;
+    margin-bottom: -15px;
+    margin-left: 25px;
+
+}
+
+.best .col-3 .b {
+    color: #96c958;
+    font-size: 50px;
+    font-weight: 400;
+    margin-top: -7px;
+    margin-left: 25px;
+}
+
+.best .clearfix h3 {
+    color: #474747;
+    font-weight: 100;
+    font-size: 18px;
+    display: table-cell;
+    height: 54px;
+    vertical-align: bottom;
+    width: 295px;
+    padding: 0 10px 5px 10px;
+    
+}
+
+.best .col-3 p {
+    font-size: 20px;
+    font-weight: 200;
+    color: #8f8f8f;
+}
+
+.best .col-3 .won {
+    font-size: 19px;
+    color: #9b9b9b;
+    font-weight: 100;
+    text-decoration: line-through;
+}
+
+.best .col-3 span {
+    color: #96c958;
+    font-size: 26px;
+    font-weight: 400;
+}
+
+.best .button img {
+    margin: 70px 1px 0 1px;
+}
+
+.best .button .bt1:hover {
+}
+
+/*===================
+	  NEW ARRIVAL
+===================*/
+
+
+.new {
+    max-width: 1260px;
+    margin: 0 auto;
+    font-family: 'Noto Sans KR', sans-serif;
+    text-align: center;
+}
+
+.new h2 {
+    font-size: 34px;
+    font-weight: 100;
+    padding: 150px 0 10px 0;
+    color: #555;
+}
+
+.new_title p {
+    font-size: 16px;
+    color: #7e7e7e;
+    font-weight: 200;
+    padding-bottom: 110px;
+}
+
+.new .clearfix img {
+    height: 100%;
+    width: 100%;
+}
+
+.new .col-3 {
+    border-right: 1px solid #eaeaea;
+    position: relative;
+}
+
+.new .col-3:last-child {
+    border: 0;
+}
+
+.new .col-3 .ordering {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: 999;
+    text-align: left;
+}
+
+.new .col-3 .a {
+    display: inline-block;
+    padding-bottom: 2px;
+    border-bottom: 2px solid rgba(150, 201, 88, 0.7);
+    font-size: 16px;
+    font-weight: 400;
+    color: #96c958;
+    margin-bottom: -15px;
+    margin-left: 25px;
+
+}
+
+.new .col-3 .b {
+    color: #96c958;
+    font-size: 50px;
+    font-weight: 400;
+    margin-top: -7px;
+    margin-left: 25px;
+}
+
+.new .clearfix h3 {
+    color: #474747;
+    font-weight: 100;
+    font-size: 18px;
+    display: table-cell;
+    height: 54px;
+    vertical-align: bottom;
+    width: 295px;
+    padding: 0 10px 5px 10px;
+    
+}
+
+.new .col-3 p {
+    font-size: 20px;
+    font-weight: 200;
+    color: #8f8f8f;
+}
+
+.new .col-3 .won {
+    font-size: 19px;
+    color: #9b9b9b;
+    font-weight: 100;
+    text-decoration: line-through;
+}
+
+.new .col-3 span {
+    color: #96c958;
+    font-size: 26px;
+    font-weight: 400;
+}
+
+.new .button img {
+    margin: 70px 1px 130px 1px;
+}
+
+
+/*===================
+	  PRODUCT
+===================*/
+
+.product {
+    margin: 0 auto;
+    height: 1052px;
+    font-family: 'Noto Sans KR', sans-serif;
+    text-align: center;
+    background-image: url(../imgs/product/product_bg2.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.product h2 {
+    font-size: 34px;
+    font-weight: 100;
+    padding: 150px 0 10px 0;
+    color: #555;
+}
+
+.product_title p {
+    font-size: 16px;
+    color: #7e7e7e;
+    font-weight: 200;
+}
+
+.product .center {
+    width: 370px;
+    height: 668px;
+    margin: 0 auto;
+    margin-top: 124px;
+    position: relative;
+}
+
+.product .a {
+    display: inline-block;
+}
+
+.product .item_li1  {
+    background-image: url(../imgs/product/skin_care.png);
+    height: 183px;
+    width: 351px;
+    position: absolute;
+    right: 208px;
+    top: 44px;
+    pointer-events: none;
+}
+
+.product .item_li1:hover {
+    background-image: url(../imgs/product/skin_care_hover.png);
+} 
+
+.product .item_li1 .cursor1 {
+    position: absolute;
+    height: 155px;
+    width: 155px;
+    top: 12px;
+    left: 8px;
+    pointer-events: auto;
+    border: 0;
+    
+}   
+
+.product .item_li2  {
+    background-image: url(../imgs/product/body_hair.png);
+    background-size: cover;
+    position: absolute;
+    height: 185px;
+    width: 268px;
+    right: -208px;
+    top: -8px;
+    pointer-events: none;
+} 
+
+.product .item_li2:hover {
+    background-image: url(../imgs/product/body_hair_hover.png);
+}
+
+.product .item_li2 .cursor2 {
+    position: absolute;
+    height: 155px;
+    width: 155px;
+    top: 12px;
+    right: 8px;
+    pointer-events: auto;
+}
+
+.product .item_li3  {
+    background-image: url(../imgs/product/pack_mask.png);
+    background-size: cover;
+    position: absolute;
+    height: 185px;
+    width: 432px;
+    left: -296px;
+    top: 255px;
+    pointer-events: none;
+}
+
+.product .item_li3:hover {
+    background-image: url(../imgs/product/pack_mask_hover.png);
+}
+.product .item_li3 .cursor3 {
+    position: absolute;
+    height: 155px;
+    width: 155px;
+    top: 12px;
+    left: 8px;
+    pointer-events: auto;
+}
+
+.product .item_li4  {
+    background-image: url(../imgs/product/cleansing.png);
+    background-size: cover;
+    position: absolute;
+    height: 185px;
+    width: 385px;
+    right: -310px;
+    top: 231px;
+    pointer-events: none;
+}
+
+.product .item_li4:hover {
+    background-image: url(../imgs/product/cleansing_hover.png);
+}
+
+.product .item_li4 .cursor4 {
+    position: absolute;
+    height: 155px;
+    width: 155px;
+    top: 12px;
+    right: 8px;
+    pointer-events: auto;
+}
+
+/*===================
+     INGREDIENTS
+===================*/
+
+.ingredients {
+    max-width: 100%;
+    height: 1008px;
+    font-family: 'Noto Sans KR', sans-serif;
+    text-align: center;
+    background-image: url(../imgs/ingredients/ingredients_bg.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.ingredients h2 {
+    font-size: 34px;
+    font-weight: 100;
+    padding: 170px 0 10px 0;
+    color: #555;
+}
+
+.ingre_title p {
+    font-size: 16px;
+    color: #7e7e7e;
+    font-weight: 200;
+    padding-bottom: 165px;
+}
+
+.ingre_wrap {
+    max-width: 1260px;
+    margin: 0 auto;
+}
+
+.ingredients img {
+    width: 100%;
+    height: 100%;
+}
+
+.ingredients .col-3 {
+    border: 0px;
+}
+
+.ingre_wrap h3 {
+    color: #555;
+    font-size: 17px;
+    font-weight: 300;
+    margin-top: 20px;
+    line-height: 1.8;
+}
+
+.ingre_wrap p {
+    color: #929292;
+    font-size: 14px;
+    font-weight: 200;
+    margin-top: 10px;
+    line-height: 1.6;
+}
+
+/*===================
+	  EVENT
+===================*/
+
+.event {
+    margin: 0 auto;
+    background-color: #f3f3f3;
+    font-family: 'Noto Sans KR', sans-serif;
+    padding-bottom: 60px;
+}
+
+.event_title {
+    max-width: 1260px;
+    margin: 0 auto;
+    padding-top: 74px;
+}
+
+.event_title h2 {
+    font-size: 30px;
+    font-weight: 100;
+    padding:  0px 0 13px 10px;
+    color: #555;
+}
+
+.event_title p {
+    font-size: 15px;
+    font-weight: 200;
+    color: #919191;
+    padding-left: 10px;
+    margin-bottom: 30px;
+}
+
+.event_wrap {
+    max-width: 1260px;
+    margin: 0 auto;
+}
+
+.event_wrap img {
+    width: 100%;
+    height: 100%;
+}
+
+.event_wrap li div {
+    background-color: #fff;
+}
+
+.event_wrap h3 {
+    margin: 20px 20px 0 20px;
+    color: #252525;
+    font-size: 16px;
+    font-weight: 300;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.event_wrap p {
+    padding: 8px 20px 28px 20px;
+    color: #8b8b8b;
+    font-size: 14px;
+    font-weight: 200;
+}
+
+/*===================
+	  NEWS
+===================*/
+
+.news {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+.news_title {
+    width: 1260px;
+    margin: 0 auto;
+    padding-top: 74px;
+}
+
+.news_title h2 {
+    font-size: 30px;
+    font-weight: 100;
+    padding:  0px 0 13px 10px;
+    color: #555;
+}
+
+.news_title p {
+    font-size: 15px;
+    font-weight: 200;
+    color: #919191;
+    padding-left: 10px;
+    margin-bottom: 30px;
+}
+
+.news_wrap {
+    max-width: 1260px;
+    margin: 0 auto;
+}
+
+.news_wrap img {
+    width: 100%;
+    height: 100%;
+}
+
+.news_wrap h3 {
+    color: #343434;
+    font-size: 17px;
+    font-weight: 400;
+    padding: 20px 20px 12px 20px;
+}
+
+.news_wrap p {
+    color: #a0a0a0;
+    font-size: 14px;
+    font-weight: 200;
+    padding: 0 20px;
+    margin-bottom: 60px;
+}
+
+
+/*===================
+	  INSTAGRAM 
+===================*/
+
+.insta {
+    font-family: 'Noto Sans KR', sans-serif;
+    background-image: url(../imgs/insta/insta_bg.png);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    padding-bottom: 60px;
+}
+
+.insta h2 {
+    color: white;
+    font-size: 34px;
+    font-weight: 100;
+    text-align-last: center;
+    padding-top: 65px;
+    padding-bottom: 20px;
+    line-height: 1.4;
+}
+
+.insta h2 span {
+    font-weight: bold;
+}
+
+.ins_wrap {
+    max-width: 1260px;
+    margin: 0 auto;
+}
+
+.ins_wrap img {
+    width: 100%;
+    height: 100%;
+}
+
+.ins_wrap li {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+
+
+
+
+
+
+/*===================
+	  BOTTOM 
+===================*/
+
+.bottom {
+    width: 100%;
+    margin: 0 auto;
+    padding: 15px 0;
+    text-align: center;
+    border-bottom: 1px solid #efefef;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+.bottom ul {
+    display: block;
+}
+
+.bottom li {
+    display: inline-block;
+}
+
+.bottom a {
+    font-size: 14px;
+    color: #5e5e5e;
+    font-weight: 200;
+}
+
+.bottom p {
+    display: inline-block;
+    color: #5e5e5e;
+    font-size: 14px;
+    font-weight: 200;
+}
+
+/*===================
+	  FOOTER
+===================*/
+
+footer {
+    font-family: 'Noto Sans KR', sans-serif;
+    height: 309px;
+    max-width: 1260px;
+    margin: auto;
+    text-align: center;
+}
+
+footer p {
+    padding-top: 40px;
+    font-size: 14px;
+    font-weight: 200;
+    color: #555;
+    line-height: 1.8;
+}
+
+footer img {
+    display: block;
+    margin: auto;
+}
+
+footer .a {
+    margin-top: 42px;
+    margin-bottom: 25px;
+}
