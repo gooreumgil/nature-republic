@@ -224,7 +224,7 @@ li {
 
 .best .clearfix h3 {
     color: #474747;
-    font-weight: 100;
+    font-weight: 300;
     font-size: 18px;
     display: table-cell;
     height: 54px;
@@ -236,7 +236,7 @@ li {
 
 .best .col-3 p {
     font-size: 20px;
-    font-weight: 200;
+    font-weight: 300;
     color: #8f8f8f;
 }
 
@@ -282,7 +282,7 @@ li {
 .new_title p {
     font-size: 16px;
     color: #7e7e7e;
-    font-weight: 200;
+    font-weight: 300;
     padding-bottom: 110px;
 }
 
@@ -342,7 +342,7 @@ li {
 
 .new .col-3 p {
     font-size: 20px;
-    font-weight: 200;
+    font-weight: 300;
     color: #8f8f8f;
 }
 
@@ -388,7 +388,7 @@ li {
 .product_title p {
     font-size: 16px;
     color: #7e7e7e;
-    font-weight: 200;
+    font-weight: 300;
 }
 
 .product .center {
@@ -523,7 +523,7 @@ li {
 .ingre_title p {
     font-size: 16px;
     color: #7e7e7e;
-    font-weight: 200;
+    font-weight: 300;
     padding-bottom: 165px;
 }
 
@@ -552,7 +552,7 @@ li {
 .ingre_wrap p {
     color: #929292;
     font-size: 14px;
-    font-weight: 200;
+    font-weight: 300;
     margin-top: 10px;
     line-height: 1.6;
 }
@@ -583,7 +583,7 @@ li {
 
 .event_title p {
     font-size: 15px;
-    font-weight: 200;
+    font-weight: 300;
     color: #919191;
     padding-left: 10px;
     margin-bottom: 30px;
@@ -643,7 +643,7 @@ li {
 
 .news_title p {
     font-size: 15px;
-    font-weight: 200;
+    font-weight: 300;
     color: #919191;
     padding-left: 10px;
     margin-bottom: 30px;
@@ -669,7 +669,7 @@ li {
 .news_wrap p {
     color: #a0a0a0;
     font-size: 14px;
-    font-weight: 200;
+    font-weight: 300;
     padding: 0 20px;
     margin-bottom: 60px;
 }
@@ -748,14 +748,14 @@ li {
 .bottom a {
     font-size: 14px;
     color: #5e5e5e;
-    font-weight: 200;
+    font-weight: 300;
 }
 
 .bottom p {
     display: inline-block;
     color: #5e5e5e;
     font-size: 14px;
-    font-weight: 200;
+    font-weight: 300;
 }
 
 /*===================
@@ -773,7 +773,7 @@ footer {
 footer p {
     padding-top: 40px;
     font-size: 14px;
-    font-weight: 200;
+    font-weight: 300;
     color: #555;
     line-height: 1.8;
 }
