@@ -7,45 +7,117 @@
 </head>
 <body>
     <header class="head">
-        <nav>
-            <a href="#">
-                <img class="logo" src="imgs/logo.png">
-            </a>
-            <ul class="menu">
-                <li><a href="#">브랜드</a></li>
-                <li><a href="#">상품</a></li>
-                <li><a href="#">이벤트</a></li>
-                <li><a href="#">뉴스</a></li>
-                <li><a href="#">커뮤니티</a></li>
-            </ul>
-            <ul class="icon">
-                <li class="a1">
-                    <a href="#">
-                        <img src="imgs/top_icon1.png">
-                    </a>
-                </li>
-                <li class="a2">
-                    <a href="#">
-                        <img src="imgs/top_icon2.png">
-                    </a>
-                </li>
-                <li class="a3">
-                    <a href="#">
-                        <img src="imgs/top_icon3.png">
-                    </a>
-                </li>
-            </ul>
-        </nav>
+        <!--
+           <table>
+               <tr>
+                   <td>
+                       <p class="logo">NATURE REPUBLIC</p>
+                   </td>
+                   <td>
+                       <ul class="menu">
+                            <li><a href="#">브랜드</a></li>
+                            <li><a href="#">상품</a></li>
+                            <li><a href="#">이벤트</a></li>
+                            <li><a href="#">뉴스</a></li>
+                            <li><a href="#">커뮤니티</a></li>
+                        </ul>
+                   </td>
+                   <td>
+                       <ul class="icon">
+                            <li class="a1">
+                                <a href="#">
+                                    <img src="imgs/top_icon1.png">
+                                </a>
+                            </li>
+                            <li class="a2">
+                                <a href="#">
+                                    <img src="imgs/top_icon2.png">
+                                </a>
+                            </li>
+                            <li class="a3">
+                                <a href="#">
+                                    <img src="imgs/top_icon3.png">
+                                </a>
+                            </li>
+                        </ul>
+                   </td>
+               </tr>
+           </table>
+           -->
+           <nav style='display: table;'>
+                <a href="#"  style="display:table-cell;vertical-align:middle;">
+                    <p class="logo">NATURE REPUBLIC</p>
+                </a>
+                <ul class="menu" style="display:table-cell;vertical-align:middle;">
+                    <li><a href="#">브랜드</a></li>
+                    <li><a href="#">상품</a></li>
+                    <li><a href="#">이벤트</a></li>
+                    <li><a href="#">뉴스</a></li>
+                    <li><a href="#">커뮤니티</a></li>
+                </ul>
+                <ul class="icon" style="display:table-cell;vertical-align:middle;">
+                    <li class="a1">
+                        <a href="#">
+                            <img src="imgs/login_fullback.png">
+                        </a>
+                    </li>
+                    <li class="a2">
+                        <a href="#">
+                            <img src="imgs/cart_fullback.png">
+                        </a>
+                    </li>
+                    <li class="a3">
+                        <a href="#">
+                            <img src="imgs/search_fullback.png">
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+<!--
+            <nav class="head_out_box">
+                <a href="#">
+                    <p class="logo">NATURE REPUBLIC</p>
+                </a>
+                <ul class="menu">
+                    <li><a href="#">브랜드</a></li>
+                    <li><a href="#">상품</a></li>
+                    <li><a href="#">이벤트</a></li>
+                    <li><a href="#">뉴스</a></li>
+                    <li><a href="#">커뮤니티</a></li>
+                </ul>
+                <ul class="icon">
+                    <li class="a1">
+                        <a href="#">
+                            <img src="imgs/top_icon1.png">
+                        </a>
+                    </li>
+                    <li class="a2">
+                        <a href="#">
+                            <img src="imgs/top_icon2.png">
+                        </a>
+                    </li>
+                    <li class="a3">
+                        <a href="#">
+                            <img src="imgs/top_icon3.png">
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+-->
     </header>
     
     <!-- BANNER -->
     
     <aside class="banner">
         <div class='wrapper-arrow'>
+           <div class="banner_top_box"></div>
             <h1><span>네이처리퍼블릭</span>은<br> 자연의 완벽함을 믿습니다.</h1>
             <a href="#">BRAND STORY</a>
-            <img class='arrow-left' src="imgs/arrow2.png">
-            <img class='arrow-right' src="imgs/arrow1.png">
+            <div class="arrow">
+                <img class='arrow-left' src="imgs/arrow2.png">
+                <img class='arrow-right' src="imgs/arrow1.png">
+            </div>
         </div>
     </aside>
     
@@ -59,12 +131,14 @@
         <ol class="clearfix">
             <li class="col-3">
                 <div class="out_box">
+                <!--
                 <div class='ordering'>
                     <p class="a" id=id_color>BEST</p>
                     <p class="b" id=id_color>01</p>
                 </div>
+                -->
                 <a href="#">
-                    <img src="imgs/best/best01.png">
+                    <img src="imgs/best/best05.png">
                 </a>
                 <h3>프레시 그린티 70 에멀젼</h3>
                 <p><span class="won">9,900</span> &nbsp; <span id=id_color>6,930</span> 원</p>
@@ -72,12 +146,14 @@
             </li>
             <li class="col-3">
                 <div class="out_box">
+                <!--
                 <div class='ordering'>
                     <p class="a" id=id_color>BEST</p>
                     <p class="b" id=id_color>02</p>
                 </div>
+                -->
                 <a href="#">
-                    <img src="imgs/best/best02.png">
+                    <img src="imgs/best/best06.png">
                 </a>
                 <h3>화이트 비타 퍼스트 에센스</h3>
                 <p><span class="won">23,900</span> &nbsp; <span id=id_color>14,340</span> 원</p>
@@ -85,12 +161,14 @@
             </li>
             <li class="col-3">
                 <div class="out_box">
+                <!--
                 <div class='ordering'>
                     <p class="a" id=id_color>BEST</p>
                     <p class="b" id=id_color>03</p>
                 </div>
+                -->
                 <a href="#">
-                    <img src="imgs/best/best03.png">
+                    <img src="imgs/best/best07.png">
                 </a>
                 <h3>폴리네시아 라군워터 스킨</h3>
                 <p><span class="won"></span><span id=id_color>9,900</span> 원</p>
@@ -98,12 +176,14 @@
             </li>
             <li class="col-3">
                 <div class="out_box">
+                <!--
                 <div class='ordering'>
                     <p class="a" id=id_color>BEST</p>
                     <p class="b" id=id_color>04</p>
                 </div>
+                -->
                 <a href="#">
-                    <img src="imgs/best/best04.png">
+                    <img src="imgs/best/best08.png">
                 </a>
                 <h3>프레시 그린티 70 에멀젼</h3>
                 <p><span class="won">31,000</span> &nbsp; <span id=id_color>15,500</span> 원</p>
@@ -127,51 +207,62 @@
     
     <section class="new">
         <div class="new_title">
-            <h2 class="main_font">New Arrival</h2>
+            <h2 class="main_font">Latest Product</h2>
             <p class="sub_font">네이처리퍼블릭에서 새로나온 제품들을 소개합니다.</p>
         </div>
         
         <ol class="clearfix">
             <li class="col-3">
-               <div class='ordering'>
+                <!--
+                <div class='ordering'>
                     <p class="a" id=id_color>JUN</p>
                     <p class="b" id=id_color>08</p>
                 </div>
+                -->
                 <a href="#">
-                    <img src="imgs/new_arrival/new1.png">
+                    <img src="imgs/new_arrival/new5.png">
                 </a>
-                <h3>아이슬란드 브라이트닝 수분크림 &amp; 퍼스트 수분에센스</h3>
+                <div class="text_box">
+                    <h3>아이슬란드 브라이트닝 수분크림 &amp; 퍼스트 수분에센스</h3>
+                </div>
                 <p><span class="won"></span><span id=id_color>29,900</span> 원</p>
+                
             </li>
             <li class="col-3">
-               <div class='ordering'>
+                <!--
+                <div class='ordering'>
                     <p class="a" id=id_color>JUN</p>
                     <p class="b" id=id_color>01</p>
                 </div>
+                -->
                 <a href="#">
-                    <img src="imgs/new_arrival/new2.png">
+                    <img src="imgs/new_arrival/new6.png">
                 </a>
                 <h3>비타민 비파이브 에센스</h3>
                 <p><span class="won"></span><span id=id_color>24,900</span> 원</p>
             </li>
             <li class="col-3">
-               <div class='ordering'>
+                <!--
+                <div class='ordering'>
                     <p class="a" id=id_color>MAY</p>
                     <p class="b" id=id_color>29</p>
                 </div>
+                -->
                 <a href="#">
-                    <img src="imgs/new_arrival/new3.png">
+                    <img src="imgs/new_arrival/new7.png">
                 </a>
                 <h3>프로방스 인텐스커버 3in1 스트로빙 파운데이션</h3>
-                <p><span class="won"23,900></span> &nbsp;<span id=id_color>19,120</span> 원</p>
+                <p><span class="won"></span><span id=id_color>19,120</span> 원</p>
             </li>
             <li class="col-3">
-               <div class='ordering'>
+                <!--
+                <div class='ordering'>
                     <p class="a" id=id_color>MAY</p>
                     <p class="b" id=id_color>16</p>
                 </div>
+                -->
                 <a href="#">
-                    <img src="imgs/new_arrival/new4.png">
+                    <img src="imgs/new_arrival/new8.png">
                 </a>
                 <h3>시티케어 마린워터 토너</h3>
                 <p><span class="won"></span><span id=id_color>14,900</span> 원</p>
