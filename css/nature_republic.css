@@ -24,31 +24,16 @@ li {
 ===================*/
 
 .head {
+    width: 100%;
     margin: 0 auto;
-    text-align: center;
+    background: none;
     position: absolute;
-    display: table;
     z-index: 999;
-    width: 100%;
-}
 
-.head .head_out_box {
-    display: table-cell;
-    vertical-align: middle;
-    z-index: 999;
-    width: 100%;
-    margin: 0 auto;
-}
-
-.head nav .logo {
-    display: inline-block;
-    font-size: 24px;
-    color: #fff;
-    font-weight: 300;
 }
 
 .head nav {
-    width: 1260px;
+    max-width: 1260px;
     margin: 0 auto;
 }
 
@@ -58,17 +43,11 @@ li {
     clear: both;
 }
 
-/*
 .head .logo {
-    width: 185px;
-    height: 15px;
+    font-size: 20px;
+    color: #fff;
     float: left;
-    margin: 37px 18px 35px 10px;
-}
-*/
-
-.head .logo:hover {
-    -webkit-filter: grayscale(100%);
+    margin: 35px 50px 35px 10px;
 }
 
 .menu {
@@ -81,13 +60,13 @@ li {
     clear: both;
 }
 
-.menu li  {
-    font-family: 'Noto Sans KR', sans-serif;
-    font-weight: 300;
+.menu li {
+    font-family: 'Nanum Gothic', sans-serif;
+    font-weight: 500;
     display: inline-block;
-    margin: 33px 18px;
+    margin: 37px 18px;
     font-size: 16px;
-    color: #fff;
+    color: #fff !important;
     float: left;
 }
 
@@ -114,12 +93,14 @@ li {
 }
 
 .icon .a2 {
-    margin: 28px 14px;
+    margin: 30px 14px;
 }
 
 .icon .a3 {
     margin: 32px 10px 32px 14px;
 }
+
+
 
 /*===================
 	  BANNER
@@ -135,7 +116,7 @@ body {
     width: 100%;
     height: 100%;
     position: relative;
-    background-image: url('../imgs/banner_bg_03.png');
+    background-image: url('../imgs/banner_bg_05.png');
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
@@ -596,6 +577,8 @@ body {
 	  EVENT
 ===================*/
 
+/*
+
 .event {
     margin: 0 auto;
     background-color: #f3f3f3;
@@ -651,6 +634,133 @@ body {
     font-weight: 300;
 }
 
+*/
+
+.event {
+    margin: 0 auto;
+    background-color: #f3f3f3;
+    font-family: 'Noto Sans KR', sans-serif;
+    padding-bottom: 60px;
+    text-align: center;
+}
+
+.event_title {
+    max-width: 1260px;
+    margin: 0 auto;
+    padding-top: 110px;
+}
+
+.event_title h2 {
+    font-size: 32px;
+    padding:  0px 0 13px 10px;
+
+}
+
+.event_title p {
+    padding-left: 10px;
+    margin-bottom: 30px;
+}
+
+.event_wrap {
+    max-width: 1260px;
+    margin: 0 auto;
+    margin-top: 70px;
+    margin-bottom: 80px;
+}
+
+.event_wrap .movie {
+    position: relative;
+    cursor: pointer;
+}
+
+.event_wrap .movie .movie_box {
+    overflow: hidden;
+}
+
+.event_wrap .play {
+    width: 84px;
+    height: 84px;
+    position: absolute;
+    top: calc(50% - 42px);
+    left: calc(50% - 42px);
+    z-index: 999;
+    background-image: url('../imgs/event/play.png');
+    background-size: 100% 100%;
+}
+
+.play {
+    width: 84px;
+    height: 84px;
+    position: absolute;
+    top: calc(50% - 42px);
+    left: calc(50% - 42px);
+    z-index: 999;
+    background-image: url('../imgs/event/play.png');
+    background-size: 100% 100%;
+    border: 0;
+    display: inline-block;
+    -webkit-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+
+.event_wrap .event_info_box {
+    position: relative;
+    height: 407px;
+}
+
+.event_wrap .event_info a {
+    position: absolute;
+    bottom: 20px;
+}
+
+.event_wrap li {
+    text-align: left;
+}
+
+.event_wrap li img {
+    max-width: 100%;
+    transition: all .3s ease-in-out;
+}
+
+.event_wrap .movie_box:hover img {
+    transform: scale3d(1.1,1.1,1);
+    transition: all .3s ease-in-out;
+}
+
+.event_wrap .movie_box:hover > a > .play {
+    background-image: url('../imgs/event/play_hover.png')
+}
+
+
+.event_wrap li h3 {
+    font-size: 28px;
+    color: #555;
+    font-weight: 300;
+    margin-left: 30px;
+    padding-top: 20px;
+}
+
+.event_wrap li p {
+    font-size: 18px;
+    color: #a0a0a0;
+    font-weight: 300;
+    margin-left: 30px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    line-height: 1.6;
+}
+
+.event_wrap .event_info a {
+    text-align: center;
+    margin-left: 30px;
+    padding: 13px 25px;
+    background-color: #fff;
+    font-size: 16px;
+    color: #555;
+
+}
+
 /*===================
 	  NEWS
 ===================*/
@@ -662,7 +772,8 @@ body {
 .news_title {
     width: 1260px;
     margin: 0 auto;
-    padding-top: 74px;
+    padding-top: 150px;
+    text-align: center;
 }
 
 .news_title h2 {
@@ -672,7 +783,7 @@ body {
 
 .news_title p {
     padding-left: 10px;
-    margin-bottom: 30px;
+    margin-bottom: 70px;
 }
 
 .news_wrap {
@@ -687,19 +798,28 @@ body {
 
 .news_wrap h3 {
     color: #363636;
-    font-size: 17px;
+    font-size: 20px;
     font-weight: 300;
-    padding: 20px 20px 12px 20px;
+    padding: 0px 10px 12px 10px;
 }
 
 .news_wrap p {
     color: #a0a0a0;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 300;
-    padding: 0 20px;
-    margin-bottom: 60px;
+    padding: 0 10px;
+    margin-bottom: 160px;
 }
 
+.news_wrap li .date {
+    font-size: 18px;
+    color: #71a532;
+    font-weight: 400;
+    margin-bottom: 15px;
+    padding: 0;
+    margin-top: 20px;
+    margin-left: 10px;
+}
 
 /*===================
 	  INSTAGRAM
@@ -707,7 +827,7 @@ body {
 
 .insta {
     font-family: 'Noto Sans KR', sans-serif;
-    background-image: url(../imgs/insta/insta_bg.png);
+    background-image: url(../imgs/insta/insta_bg2.png);
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
