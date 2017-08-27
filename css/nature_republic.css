@@ -24,6 +24,7 @@ li {
 ===================*/
 
 .head {
+    font-family: 'Noto Sans KR', sans-serif;
     width: 100%;
     margin: 0 auto;
     background: none;
@@ -47,7 +48,7 @@ li {
     font-size: 20px;
     color: #fff;
     float: left;
-    margin: 35px 50px 35px 10px;
+    margin: 32px 50px 32px 10px;
 }
 
 .menu {
@@ -72,6 +73,10 @@ li {
 
 .menu li a {
     color: #fff;
+}
+
+.menu li a:hover {
+    color: rgba(255,255,255,.7);
 }
 
 .icon {
@@ -113,6 +118,7 @@ body {
 }
 
 .banner {
+    font-family: 'Noto Sans KR', sans-serif;
     width: 100%;
     height: 100%;
     position: relative;
@@ -132,7 +138,6 @@ body {
 }
 
 .banner h1 {
-    font-family: 'Noto Sans KR', sans-serif;
     font-size: 38px;
     font-weight: 100;
     text-align: center;
@@ -142,7 +147,6 @@ body {
 .banner a {
     display: block;
     width: 168px;
-    font-family: 'Noto Sans KR', sans-serif;
     color: white;
     font-size: 17px;
     font-weight: 300;
@@ -152,6 +156,13 @@ body {
     border: 1px solid white;
     text-align: center;
     border-radius: 25px;
+    transition: all .3s ease-in-out;
+}
+
+.banner a:hover {
+    background-color: #fff;
+    color: #555;
+    border: 1px solid #fff;
 }
 
 .banner .wrapper-arrow {
@@ -217,8 +228,22 @@ body {
     text-align: left;
 }
 
-.best .col-3 img:hover {
-    -webkit-filter: drop-shadow(8px 8px 10px lightgray);
+.best .col-3 .out_box {
+    position: relative;
+}
+
+.best .col-3 .best_hover {
+    display: none;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(255,255,255,.7);
+    top: 0px;
+}
+
+.best .col-3 img:hover + .best_hover {
+    display: table-cell;
+    pointer-events: none;
 }
 
 .best .col-3:last-child {
@@ -433,6 +458,7 @@ body {
     right: 208px;
     top: 44px;
     pointer-events: none;
+    transition: all .2s ease-in-out;
 }
 
 .product .item_li1:hover {
@@ -459,6 +485,7 @@ body {
     right: -208px;
     top: -8px;
     pointer-events: none;
+    transition: all .2s ease-in-out;
 }
 
 .product .item_li2:hover {
@@ -483,6 +510,7 @@ body {
     left: -296px;
     top: 255px;
     pointer-events: none;
+    transition: all .2s ease-in-out;
 }
 
 .product .item_li3:hover {
@@ -506,6 +534,7 @@ body {
     right: -310px;
     top: 231px;
     pointer-events: none;
+    transition: all .2s ease-in-out;
 }
 
 .product .item_li4:hover {
@@ -675,6 +704,7 @@ body {
 
 .event_wrap .movie .movie_box {
     overflow: hidden;
+    max-height: 407px;
 }
 
 .event_wrap .play {
@@ -704,14 +734,7 @@ body {
     transition: all .3s ease-in-out;
 }
 
-.event_wrap .event_info_box {
-    position: relative;
-    height: 407px;
-}
-
 .event_wrap .event_info a {
-    position: absolute;
-    bottom: 20px;
 }
 
 .event_wrap li {
@@ -724,7 +747,7 @@ body {
 }
 
 .event_wrap .movie_box:hover img {
-    transform: scale3d(1.1,1.1,1);
+    transform: scale3d(1.03,1.03,1);
     transition: all .3s ease-in-out;
 }
 
@@ -738,7 +761,7 @@ body {
     color: #555;
     font-weight: 300;
     margin-left: 30px;
-    padding-top: 20px;
+    padding-top: 30px;
 }
 
 .event_wrap li p {
@@ -754,11 +777,32 @@ body {
 .event_wrap .event_info a {
     text-align: center;
     margin-left: 30px;
-    padding: 13px 25px;
+    padding: 12px 25px;
     background-color: #fff;
     font-size: 16px;
     color: #555;
+    border-radius: 30px;
 
+}
+
+.event_wrap .event_info a:hover {
+    color: #fff;
+    background-color: #71a532;
+}
+
+.event_wrap .event_info a:hover > div {
+    background-image: url(../imgs/event/event_arrow_hover.png);
+}
+
+.event_wrap .event_info a div {
+    display: inline-block;
+    background-image: url(../imgs/event/event_arrow.png);
+    height: 13px;
+    width: 7px;
+}
+
+.event_wrap .event_info a .event_arrow {
+    margin-left: 10px;
 }
 
 /*===================
@@ -861,6 +905,14 @@ body {
 .ins_wrap li {
     margin-top: 10px;
     margin-bottom: 10px;
+}
+
+.ins_wrap img {
+    transition: all .1s ease-in-out;
+}
+
+.ins_wrap img:hover {
+    -webkit-filter: brightness(106%);
 }
 
 
