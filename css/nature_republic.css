@@ -232,15 +232,6 @@ body {
     position: relative;
 }
 
-.best .col-3 .best_hover {
-    display: none;
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    background-color: rgba(255,255,255,.7);
-    top: 0px;
-}
-
 .best .col-3 .inner-box {
     position: relative;
 }
@@ -255,9 +246,21 @@ body {
     pointer-events: none;
 }
 
+.best .col-3 .best_hover {
+    display: none;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0px;
+    text-align: center;
+    background-color: rgba(255,255,255,.3);
+}
+
+
 .best .col-3:last-child {
     border: 0;
 }
+
 
 .best .clearfix .ordering {
     position: absolute;
@@ -358,6 +361,34 @@ body {
     border: 0;
 }
 
+.new .col-3 .out_box {
+    position: relative;
+}
+
+.new .col-3 .inner-box {
+    position: relative;
+}
+
+.new .col-3 .inner-box a {
+    height: 100%;
+    display: table;
+}
+.new .col-3 .inner-box:hover > a > .new_hover {
+    display: table-cell;
+    vertical-align: middle;
+    pointer-events: none;
+}
+
+.new .col-3 .new_hover {
+    display: none;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0px;
+    text-align: center;
+    background-color: rgba(255,255,255,.3);
+}
+
 .new .col-3 .ordering {
     position: absolute;
     left: 0px;
@@ -397,10 +428,6 @@ body {
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
-}
-
-.new .col-3 img:hover {
-    -webkit-filter: drop-shadow(8px 8px 10px lightgray);
 }
 
 .new .col-3 p {
@@ -615,65 +642,6 @@ body {
 	  EVENT
 ===================*/
 
-/*
-
-.event {
-    margin: 0 auto;
-    background-color: #f3f3f3;
-    font-family: 'Noto Sans KR', sans-serif;
-    padding-bottom: 60px;
-}
-
-.event_title {
-    max-width: 1260px;
-    margin: 0 auto;
-    padding-top: 74px;
-}
-
-.event_title h2 {
-    font-size: 32px;
-    padding:  0px 0 13px 10px;
-
-}
-
-.event_title p {
-    padding-left: 10px;
-    margin-bottom: 30px;
-}
-
-.event_wrap {
-    max-width: 1260px;
-    margin: 0 auto;
-}
-
-.event_wrap img {
-    width: 100%;
-    height: 100%;
-}
-
-.event_wrap li div {
-    background-color: #fff;
-}
-
-.event_wrap h3 {
-    margin: 20px 20px 0 20px;
-    color: #363636;
-    font-size: 16px;
-    font-weight: 300;
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-}
-
-.event_wrap p {
-    padding: 8px 20px 28px 20px;
-    color: #9c9c9c;
-    font-size: 14px;
-    font-weight: 300;
-}
-
-*/
-
 .event {
     margin: 0 auto;
     background-color: #f3f3f3;
@@ -738,9 +706,9 @@ body {
     background-size: 100% 100%;
     border: 0;
     display: inline-block;
-    -webkit-transition: all .3s ease-in-out;
-    -o-transition: all .3s ease-in-out;
-    transition: all .3s ease-in-out;
+    -webkit-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
 }
 
 .event_wrap .event_info a {
@@ -752,16 +720,16 @@ body {
 
 .event_wrap li img {
     max-width: 100%;
-    transition: all .3s ease-in-out;
+    transition: all .2s ease-in-out;
 }
 
 .event_wrap .movie_box:hover img {
     transform: scale3d(1.03,1.03,1);
-    transition: all .3s ease-in-out;
+    transition: all .2s ease-in-out;
 }
 
 .event_wrap .movie_box:hover > a > .play {
-    background-image: url('../imgs/event/play_hover.png')
+    background-image: url('../imgs/event/play_hover.png');
 }
 
 
@@ -791,6 +759,7 @@ body {
     font-size: 16px;
     color: #555;
     border-radius: 30px;
+    transition: all .2s ease-in-out;
 
 }
 
@@ -808,6 +777,7 @@ body {
     background-image: url(../imgs/event/event_arrow.png);
     height: 13px;
     width: 7px;
+    transition: all .2s ease-in-out;
 }
 
 .event_wrap .event_info a .event_arrow {
