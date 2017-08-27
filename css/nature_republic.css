@@ -241,8 +241,17 @@ body {
     top: 0px;
 }
 
-.best .col-3 img:hover + .best_hover {
+.best .col-3 .inner-box {
+    position: relative;
+}
+
+.best .col-3 .inner-box a {
+    height: 100%;
+    display: table;
+}
+.best .col-3 .inner-box:hover > a > .best_hover {
     display: table-cell;
+    vertical-align: middle;
     pointer-events: none;
 }
 
