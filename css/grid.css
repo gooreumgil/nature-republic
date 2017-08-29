@@ -57,12 +57,12 @@ li {list-style: none;}
     font-family: 'Noto Sans KR', sans-serif;
     font-weight: 300;
     color: #555;
-    font-size: 36px;
+    font-size: 32px;
 }
 
 .sub_font {
     font-family: 'Noto Sans KR', sans-serif;
-    color: #9c9c9c;
+    color: #a0a0a0;
     font-size: 16px;
     font-weight: 300;
 }

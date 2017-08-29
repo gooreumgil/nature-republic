@@ -29,7 +29,6 @@ li {
     background: none;
     position: absolute;
     z-index: 999;
-
 }
 
 .head nav {
@@ -44,10 +43,11 @@ li {
 }
 
 .head .logo {
+    font-weight: 200;
     font-size: 20px;
     color: #fff;
     float: left;
-    margin: 32px 50px 32px 10px;
+    margin: 34px 18px 34px 10px;
 }
 
 .menu {
@@ -64,7 +64,7 @@ li {
     font-family: 'Nanum Gothic', sans-serif;
     font-weight: 500;
     display: inline-block;
-    margin: 37px 18px;
+    margin: 36px 18px;
     font-size: 16px;
     color: #fff !important;
     float: left;
@@ -98,6 +98,28 @@ li {
 
 .icon .a2 {
     margin: 30px 14px;
+}
+
+.icon .a2 div {
+    position: relative;
+}
+
+.icon .a2 div .cart_number {
+    opacity: 1;
+    position: absolute;
+    top: -3px;
+    right: -5px;
+    display: flex;
+    align-items: center; /* 세로정렬 */
+    justify-content: center
+}
+
+.icon .a2 div .cart_number p {
+    font-size: 11px;
+    color: #fff;
+    font-weight: 300;
+    position: absolute;
+    z-index: 999;
 }
 
 .icon .a3 {
@@ -270,7 +292,7 @@ body {
 }
 
 .best h2 {
-    font-size: 34px;
+    font-size: 32px;
     padding: 180px 0 10px 0;
 }
 
@@ -304,68 +326,37 @@ body {
     display: table;
 }
 .best .col-3 .inner-box:hover > a > .best_hover {
-    display: table-cell;
+    opacity: 1;
     vertical-align: middle;
     pointer-events: none;
 }
 
 .best .col-3 .best_hover {
-    display: none;
+    opacity: 0;
     position: absolute;
     height: 100%;
     width: 100%;
     top: 0px;
     text-align: center;
-    background-color: rgba(255,255,255,.3);
-}
-
-
-.best .col-3:last-child {
-    border: 0;
-}
-
-
-.best .clearfix .ordering {
-    position: absolute;
-    left: 0px;
-    top: 0px;
-    z-index: 999;
-    text-align: left;
-}
-
-.best .col-3 .a {
-    padding-top: 15px;
-    display: inline-block;
-    padding-bottom: 2px;
-    border-bottom: 2px solid rgba(126, 187, 52, 0.7);
-    font-size: 16px;
-    font-weight: 400;
-    margin-bottom: -15px;
-    margin-left: 25px;
-
-}
-
-.best .col-3 .b {
-    font-size: 50px;
-    font-weight: 400;
-    margin-top: -7px;
-    margin-left: 25px;
+    background-color: rgba(255,255,255,.2);
+    transition: all .2s ease-in-out;
 }
 
 .best .clearfix h3 {
     color: #555;
     font-weight: 300;
     font-size: 18px;
-    display: table-cell;
-    height: 54px;
-    vertical-align: bottom;
     width: 295px;
     padding: 0 15px 5px 15px;
+    margin-top: 20px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 
 }
 
 .best .col-3 p {
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 300;
     color: #8f8f8f;
     padding-bottom: 15px;
@@ -373,22 +364,15 @@ body {
 
 .best .col-3 .won {
     margin-left: 15px;
-    font-size: 19px;
+    font-size: 16px;
     color: #9b9b9b;
     font-weight: 100;
     text-decoration: line-through;
 }
 
 .best .col-3 span {
-    font-size: 26px;
+    font-size: 24px;
     font-weight: 400;
-}
-
-.best .button img {
-    margin: 70px 1px 0 1px;
-}
-
-.best .button .bt1:hover {
 }
 
 /*===================
@@ -420,10 +404,6 @@ body {
     position: relative;
 }
 
-.new .col-3:last-child {
-    border: 0;
-}
-
 .new .col-3 .out_box {
     position: relative;
 }
@@ -437,47 +417,20 @@ body {
     display: table;
 }
 .new .col-3 .inner-box:hover > a > .new_hover {
-    display: table-cell;
+    opacity: 1;
     vertical-align: middle;
     pointer-events: none;
 }
 
 .new .col-3 .new_hover {
-    display: none;
+    opacity: 0;
     position: absolute;
     height: 100%;
     width: 100%;
     top: 0px;
     text-align: center;
     background-color: rgba(255,255,255,.3);
-}
-
-.new .col-3 .ordering {
-    position: absolute;
-    left: 0px;
-    top: 0px;
-    z-index: 999;
-    text-align: left;
-}
-
-.new .col-3 .a {
-    display: inline-block;
-    padding-bottom: 2px;
-    border-bottom: 2px solid rgba(126, 187, 52, 0.7);
-    font-size: 16px;
-    font-weight: 400;
-    color: #96c958;
-    margin-bottom: -15px;
-    margin-left: 25px;
-
-}
-
-.new .col-3 .b {
-    color: #96c958;
-    font-size: 50px;
-    font-weight: 400;
-    margin-top: -7px;
-    margin-left: 25px;
+    transition: all .2s ease-in-out;
 }
 
 .new .clearfix h3 {
@@ -494,14 +447,14 @@ body {
 }
 
 .new .col-3 p {
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 300;
     color: #8f8f8f;
     text-align: left;
 }
 
 .new .col-3 .won {
-    font-size: 19px;
+    font-size: 16px;
     color: #9b9b9b;
     font-weight: 100;
     text-decoration: line-through;
@@ -510,7 +463,7 @@ body {
 
 .new .col-3 span {
     color: #96c958;
-    font-size: 26px;
+    font-size: 22px;
     font-weight: 400;
 }
 
@@ -524,7 +477,7 @@ body {
 
 .event {
     margin: 0 auto;
-    background-color: #f3f3f3;
+    background-color: #f9f9f9;
     font-family: 'Noto Sans KR', sans-serif;
     padding-bottom: 60px;
     text-align: center;
@@ -564,36 +517,6 @@ body {
     max-height: 407px;
 }
 
-.event_wrap .play {
-    width: 84px;
-    height: 84px;
-    position: absolute;
-    top: calc(50% - 42px);
-    left: calc(50% - 42px);
-    z-index: 999;
-    background-image: url('../imgs/event/play.png');
-    background-size: 100% 100%;
-}
-
-.play {
-    width: 84px;
-    height: 84px;
-    position: absolute;
-    top: calc(50% - 42px);
-    left: calc(50% - 42px);
-    z-index: 999;
-    background-image: url('../imgs/event/play.png');
-    background-size: 100% 100%;
-    border: 0;
-    display: inline-block;
-    -webkit-transition: all .2s ease-in-out;
-    -o-transition: all .2s ease-in-out;
-    transition: all .2s ease-in-out;
-}
-
-.event_wrap .event_info a {
-}
-
 .event_wrap li {
     text-align: left;
 }
@@ -605,11 +528,7 @@ body {
 
 .event_wrap .movie_box:hover img {
     transform: scale3d(1.03,1.03,1);
-    transition: all .2s ease-in-out;
-}
-
-.event_wrap .movie_box:hover > a > .play {
-    background-image: url('../imgs/event/play_hover.png');
+    transition: all .3s ease-in-out;
 }
 
 .event_wrap li .text_box {
@@ -655,141 +574,8 @@ body {
 .event_wrap .text_box a:hover {
     color: #fff;
     background-color: #71a532;
+    border: 1px solid #71a532;
 }
-
-/*===================
-	  PRODUCT
-===================*/
-
-/*
-
-.product {
-    margin: 0 auto;
-    height: 1052px;
-    font-family: 'Noto Sans KR', sans-serif;
-    text-align: center;
-    background-image: url(../imgs/product/product_bg2.png);
-    background-position: center;
-    background-size: cover;
-}
-
-.product h2 {
-    padding: 150px 0 10px 0;
-}
-
-.product .center {
-    width: 370px;
-    height: 668px;
-    margin: 0 auto;
-    margin-top: 124px;
-    position: relative;
-}
-
-.product .a {
-    display: inline-block;
-}
-
-.product .item_li1  {
-    background-image: url(../imgs/product/skin_care.png);
-    height: 183px;
-    width: 351px;
-    position: absolute;
-    right: 208px;
-    top: 44px;
-    pointer-events: none;
-    transition: all .2s ease-in-out;
-}
-
-.product .item_li1:hover {
-    background-image: url(../imgs/product/skin_care_hover.png);
-}
-
-.product .item_li1 .cursor1 {
-    position: absolute;
-    height: 155px;
-    width: 155px;
-    top: 12px;
-    left: 8px;
-    pointer-events: auto;
-    border: 0;
-
-}
-
-.product .item_li2  {
-    background-image: url(../imgs/product/body_hair.png);
-    background-size: cover;
-    position: absolute;
-    height: 185px;
-    width: 268px;
-    right: -208px;
-    top: -8px;
-    pointer-events: none;
-    transition: all .2s ease-in-out;
-}
-
-.product .item_li2:hover {
-    background-image: url(../imgs/product/body_hair_hover.png);
-}
-
-.product .item_li2 .cursor2 {
-    position: absolute;
-    height: 155px;
-    width: 155px;
-    top: 12px;
-    right: 8px;
-    pointer-events: auto;
-}
-
-.product .item_li3  {
-    background-image: url(../imgs/product/pack_mask.png);
-    background-size: cover;
-    position: absolute;
-    height: 185px;
-    width: 432px;
-    left: -296px;
-    top: 255px;
-    pointer-events: none;
-    transition: all .2s ease-in-out;
-}
-
-.product .item_li3:hover {
-    background-image: url(../imgs/product/pack_mask_hover.png);
-}
-.product .item_li3 .cursor3 {
-    position: absolute;
-    height: 155px;
-    width: 155px;
-    top: 12px;
-    left: 8px;
-    pointer-events: auto;
-}
-
-.product .item_li4  {
-    background-image: url(../imgs/product/cleansing.png);
-    background-size: cover;
-    position: absolute;
-    height: 185px;
-    width: 385px;
-    right: -310px;
-    top: 231px;
-    pointer-events: none;
-    transition: all .2s ease-in-out;
-}
-
-.product .item_li4:hover {
-    background-image: url(../imgs/product/cleansing_hover.png);
-}
-
-.product .item_li4 .cursor4 {
-    position: absolute;
-    height: 155px;
-    width: 155px;
-    top: 12px;
-    right: 8px;
-    pointer-events: auto;
-}
-
-*/
 
 /*===================
      INGREDIENTS
@@ -861,7 +647,7 @@ body {
 }
 
 .news_title h2 {
-    font-size: 30px;
+    font-size: 32px;
     padding:  0px 0 13px 10px;
 }
 
@@ -926,7 +712,7 @@ body {
 
 .insta h2 {
     color: white;
-    font-size: 34px;
+    font-size: 32px;
     font-weight: 100;
     text-align-last: center;
     padding-top: 65px;

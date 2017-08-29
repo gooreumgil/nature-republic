@@ -1,7 +1,7 @@
 /* CSS RESET */
 
 @import url(//fonts.googleapis.com/earlyaccess/nanumgothic.css);
-@import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
+
 * {
     padding: 0;
     border: 0;
@@ -22,10 +22,16 @@ li {
 ===================*/
 
 .head {
+    font-family: 'Noto Sans KR', sans-serif;
+    width: 100%;
+    margin: 0 auto;
+    background: #fff;
+
+}
+
+.head nav {
     max-width: 1260px;
     margin: 0 auto;
-    border-bottom: 1px solid #efefef;
-
 }
 
 .head nav::after {
@@ -35,10 +41,11 @@ li {
 }
 
 .head .logo {
-    width: 185px;
-    height: 15px;
+    font-size: 20px;
+    font-weight: 200;
+    color: #7ebb34;
     float: left;
-    margin: 35px 18px 35px 10px;
+    margin: 34px 18px 34px 10px;
 }
 
 .menu {
@@ -55,14 +62,18 @@ li {
     font-family: 'Nanum Gothic', sans-serif;
     font-weight: 500;
     display: inline-block;
-    margin: 33px 18px;
+    margin: 36px 18px;
     font-size: 16px;
-    color: #6f6f6f !important;
+    color: #fff !important;
     float: left;
 }
 
 .menu li a {
-    color: #6f6f6f;
+    color: #555;
+}
+
+.menu li a:hover {
+    color: rgba(85,85,85,.6);
 }
 
 .icon {
@@ -84,7 +95,29 @@ li {
 }
 
 .icon .a2 {
-    margin: 28px 14px;
+    margin: 30px 14px;
+}
+
+.icon .a2 div {
+    position: relative;
+}
+
+.icon .a2 div .cart_number {
+    opacity: .75;
+    position: absolute;
+    top: -3px;
+    right: -5px;
+    display: flex;
+    align-items: center; /* 세로정렬 */
+    justify-content: center
+}
+
+.icon .a2 div .cart_number p {
+    font-size: 11px;
+    color: #fff;
+    font-weight: 300;
+    position: absolute;
+    z-index: 999;
 }
 
 .icon .a3 {
@@ -121,22 +154,18 @@ li {
 }
 
 .top h1 {
-    padding: 160px 10px 15px 10px;
-    font-size: 20px;
-    font-weight: 300;
+    padding: 160px 10px 5px 10px;
+    font-size: 60px;
+    font-weight: 400;
     color: #fff;
     line-height: 1.3;
 }
 
-.top h1 span {
-    font-size: 60px;
-    font-weight: 400;
-}
-
 .top_name p {
+    font-size: 16px;
     padding: 0 10px;
-    color: rgba(255, 255, 255, .7);
-    font-weight: normal;
+    color: rgba(255, 255, 255,.8);
+    font-weight: 300;
     line-height: 1.5;
     font-weight: 100;
 }
@@ -176,26 +205,25 @@ li {
 ===================*/
 
 .best {
-    height: 717px;
+    font-family: 'Noto Sans KR', sans-serif;
     max-width: 1260px;
     margin: 0 auto;
+    padding-top: 150px;
+    text-align: center;
 }
 
-.best_item {
-    padding-top: 140px;
-    font-family: 'Noto Sans KR', sans-serif;
-}
-
-.best_item li .ordering {
-    position: absolute;
-    left: 0px;
-    top: 0px;
-    z-index: 999;
+.best .best_title h2 {
+    padding-bottom: 10px;
 }
 
 .best_item li .be_item {
     display: block;
     overflow: hidden;
+    margin-top: 50px;
+}
+
+.best_item li {
+    text-align: left;
 }
 
 .best_item li img {
@@ -203,52 +231,33 @@ li {
     height: 100%;
 }
 
-.best_item .a {
-    display: inline-block;
-    padding-bottom: 2px;
-    border-bottom: 2px solid rgba(150, 201, 88, 0.7);
-    font-size: 16px;
-    font-weight: 400;
-    color: #96c958;
-    margin-bottom: -15px;
-    margin-left: 25px;
-}
-
-.best_item .b {
-    color: #96c958;
-    font-size: 50px;
-    font-weight: 400;
-    margin-left: 25px;
-    margin-top: -7px;
-}
-
-.best_item .c {
-    display: table-cell;
-    vertical-align: bottom;
-    width: 295px;
-    height: 54px;
+.best_item h3 {
     font-size: 18px;
     font-weight: 300;
     color: #555;
-    text-align: center;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    margin: 0 10px;
+    margin-top: 20px;
 }
 
 .best_item .d {
-    font-size: 19px;
-    color: #9b9b9b;
+    font-size: 18px;
+    color: #a0a0a0;
     font-weight: 300;
-    text-align: center;
     padding-top: 5px;
+    margin: 5px 10px;
 }
 
 .best_item span {
-    color: #96c958;
-    font-size: 26px;
+    font-size: 24px;
     font-weight: 400;
 }
 
-.best_item .won {
-    font-size: 19px;
+
+.best .col-3 .won {
+    font-size: 16px;
     color: #9b9b9b;
     font-weight: 100;
     text-decoration: line-through;
@@ -256,11 +265,6 @@ li {
 
 .best_item .col-3 {
     position: relative;
-    border-right: 1px solid #eaeaea;
-}
-
-.best_item .col-3:last-child {
-    border: 0;
 }
 
 
@@ -276,6 +280,7 @@ li {
     font-family: 'Noto Sans KR', sans-serif;
     text-align: left;
     position: relative;
+    margin-top: 150px;
 }
 
 .skin_top {
@@ -289,7 +294,6 @@ li {
 
 .skin_top span {
     font-size: 24px;
-    color: #8bc545;
     font-weight: 300;
 
 }
@@ -316,20 +320,21 @@ li {
 
 .skin_care .col-3 .a {
     font-size: 18px;
-    color: #474747;
+    color: #555;
     font-weight: 300;
-    padding: 0 20px 5px 20px;
+    padding: 0 10px 5px 10px;
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
+    margin-top: 20px;
 }
 
 .skin_care .col-3 .b {
-    font-size: 12px;
-    color: #8c8c8c;
+    font-size: 14px;
+    color: #a0a0a0;
     font-weight: 200;
     line-height: 1.5;
-    padding: 0 20px;
+    padding: 5px 10px;
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
     overflow: hidden;
@@ -339,19 +344,17 @@ li {
 }
 
 .skin_care .col-3 .c {
-    font-size: 19px;
-    width: 255px;
-    color: #9b9b9b;
-    margin: 0 auto;
+    font-size: 18px;
+    color: #a0a0a0;
     font-weight: 200;
     padding-top: 30px;
     padding-bottom: 12px;
     border-bottom: 2px solid #efefef;
+    margin: 0 10px;
 }
 
 .skin_care .col-3 span {
-    color: #96c958;
-    font-size: 26px;
+    font-size: 24px;
     font-weight: 400;
 }
 
