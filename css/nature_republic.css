@@ -2,7 +2,8 @@
 	  CSS RESET
 ===================*/
 
-@import url(//fonts.googleapis.com/earlyaccess/nanumgothic.css);
+@import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
+
 * {
     padding: 0;
     border: 0;
@@ -29,6 +30,7 @@ li {
     background: none;
     position: absolute;
     z-index: 999;
+    height: 90px;
 }
 
 .head nav {
@@ -43,15 +45,21 @@ li {
 }
 
 .head .logo {
-    font-weight: 200;
+    font-weight: 300;
     font-size: 20px;
     color: #fff;
     float: left;
-    margin: 34px 18px 34px 10px;
+    margin: 0px 18px 0px 10px;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 90px;
 }
 
 .menu {
     float: left;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 90px;
 }
 
 .menu::after {
@@ -61,10 +69,9 @@ li {
 }
 
 .menu li {
-    font-family: 'Nanum Gothic', sans-serif;
-    font-weight: 500;
+    font-weight: 300;
     display: inline-block;
-    margin: 36px 18px;
+    margin: 0px 18px;
     font-size: 16px;
     color: #fff !important;
     float: left;
@@ -80,6 +87,7 @@ li {
 
 .icon {
     float: right;
+    line-height: 90px;
 }
 
 .icon::after {
@@ -88,16 +96,30 @@ li {
     clear: both;
 }
 
+.icon .helper {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+
+.icon img {
+    vertical-align: middle;
+}
+
 .icon li {
     float: left;
 }
 
 .icon .a1 {
-    margin: 32px 14px;
+    margin: 0px 14px;
 }
 
 .icon .a2 {
-    margin: 30px 14px;
+    margin: 0px 14px;
+}
+
+.icon .cart_inner {
+    
 }
 
 .icon .a2 div {
@@ -107,8 +129,8 @@ li {
 .icon .a2 div .cart_number {
     opacity: 1;
     position: absolute;
-    top: -3px;
-    right: -5px;
+    top: 30px;
+    right: -6px;
     display: flex;
     align-items: center; /* 세로정렬 */
     justify-content: center
@@ -123,7 +145,7 @@ li {
 }
 
 .icon .a3 {
-    margin: 32px 10px 32px 14px;
+    margin: 0px 10px 0px 14px;
 }
 
 
@@ -306,9 +328,6 @@ body {
 }
 
 .best .col-3 {
-    /*
-    border-right: 1px solid #ccc;
-    */
     position: relative;
     text-align: left;
 }
