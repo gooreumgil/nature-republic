@@ -41,15 +41,22 @@ li {
     clear: both;
 }
 
-.head .logo {
-    font-weight: 300;
-    font-size: 20px;
-    color: #7ebb34;
+.head .logo_a {
     float: left;
+    line-height: 90px;
+    font-size: 0;
+}
+
+.head .logo_helper {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+
+.head .logo {
     margin: 0px 18px 0px 10px;
     display: inline-block;
     vertical-align: middle;
-    line-height: 90px;
 }
 
 .menu {
