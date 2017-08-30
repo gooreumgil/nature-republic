@@ -2,8 +2,8 @@
 	  CSS RESET 
 ===================*/
 
-@import url(//fonts.googleapis.com/earlyaccess/nanumgothic.css);
 @import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
+
 * {
     padding: 0;
     border: 0;
@@ -25,10 +25,13 @@ li {
 ===================*/
 
 .head {
+    font-family: 'Noto Sans KR', sans-serif;
     width: 100%;
     margin: 0 auto;
-    border-bottom: 1px solid #efefef;
-
+    background: none;
+    z-index: 999;
+    height: 90px;
+    border-bottom: 1px solid #eaeaea;
 }
 
 .head nav {
@@ -43,14 +46,21 @@ li {
 }
 
 .head .logo {
-    width: 185px;
-    height: 15px;
+    font-weight: 300;
+    font-size: 20px;
+    color: #7ebb34;
     float: left;
-    margin: 35px 18px 35px 10px;
+    margin: 0px 18px 0px 10px;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 90px;
 }
 
 .menu {
     float: left;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 90px;
 }
 
 .menu::after {
@@ -60,21 +70,25 @@ li {
 }
 
 .menu li {
-    font-family: 'Nanum Gothic', sans-serif;
-    font-weight: 500;
+    font-weight: 300;
     display: inline-block;
-    margin: 33px 18px;
+    margin: 0px 18px;
     font-size: 16px;
-    color: #6f6f6f !important;
+    color: #555 !important;
     float: left;
 }
 
 .menu li a {
-    color: #6f6f6f;
+    color: #555;
+}
+
+.menu li a:hover {
+    color: rgba(85,85,85,.6);
 }
 
 .icon {
     float: right;
+    line-height: 90px;
 }
 
 .icon::after {
@@ -83,20 +97,56 @@ li {
     clear: both;
 }
 
+.icon .helper {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+
+.icon img {
+    vertical-align: middle;
+}
+
 .icon li {
     float: left;
 }
 
 .icon .a1 {
-    margin: 32px 14px;
+    margin: 0px 14px;
 }
 
 .icon .a2 {
-    margin: 28px 14px;
+    margin: 0px 14px;
+}
+
+.icon .cart_inner {
+    
+}
+
+.icon .a2 div {
+    position: relative;
+}
+
+.icon .a2 div .cart_number {
+    opacity: 1;
+    position: absolute;
+    top: 31px;
+    right: -6px;
+    display: flex;
+    align-items: center; /* 세로정렬 */
+    justify-content: center
+}
+
+.icon .a2 div .cart_number p {
+    font-size: 11px;
+    color: #fff;
+    font-weight: 300;
+    position: absolute;
+    z-index: 999;
 }
 
 .icon .a3 {
-    margin: 32px 10px 32px 14px;
+    margin: 0px 10px 0px 14px;
 }
 
 
@@ -169,7 +219,7 @@ thumb_wrap {
 
 .product_view .col-5 h2 {
     font-size: 42px;
-    color: #444;
+    color: #555;
     font-weight: 400;
     margin-top: 10px;
 }
@@ -183,7 +233,7 @@ thumb_wrap {
 
 .product_view .product_sub p {
     font-size: 16px;
-    color: #848484;
+    color: #a0a0a0;
     font-weight: 100;
     margin-top: 20px;
 }
@@ -294,7 +344,7 @@ thumb_wrap {
 
 .button ul .like img {
     display: block;
-    margin-top: 20px;
+    margin-top: 21px;
 }
 
 .button ul li img {
@@ -303,6 +353,10 @@ thumb_wrap {
 
 .button ul li div {
     height: 66px;
+}
+
+.button .like div,
+.button .cart div {
     background-color: #f3f3f3;
 }
 
@@ -321,11 +375,7 @@ thumb_wrap {
 }
 
 .button .col-6 {
-    background-color: #8bc545;
-}
-
-.button .col-6 div {
-    background-color: #8bc545;
+    background-color: #7ebb34;
 }
 
 .button .col-6 div p {
@@ -378,6 +428,8 @@ thumb_wrap {
     color: #555;
     font-weight: 300;
     padding: 0 10px;
+    text-align: left;
+    margin-top: 20px;
 }
 
 /*===================
@@ -397,7 +449,7 @@ thumb_wrap {
 }
 
 .detail .detail_wrap .first{
-    background-color: #8bc545;
+    background-color: #7ebb34;
 }
 
 .detail .detail_wrap .first a {
@@ -409,7 +461,7 @@ thumb_wrap {
 }
 
 .detail .detail_wrap div:hover{
-    background-color: #8bc545;
+    background-color: #7ebb34;
 }
 
 .detail .detail_wrap div:hover > a{
@@ -468,6 +520,8 @@ thumb_wrap {
     color: #555;
     font-weight: 300;
     padding: 0 10px;
+    text-align: left;
+    margin-top: 20px;
 }
 
 .category_best .col-3 img {

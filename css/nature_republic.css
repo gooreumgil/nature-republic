@@ -129,7 +129,7 @@ li {
 .icon .a2 div .cart_number {
     opacity: 1;
     position: absolute;
-    top: 30px;
+    top: 31px;
     right: -6px;
     display: flex;
     align-items: center; /* 세로정렬 */
@@ -375,7 +375,7 @@ body {
 }
 
 .best .col-3 p {
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 300;
     color: #8f8f8f;
     padding-bottom: 15px;
@@ -466,7 +466,7 @@ body {
 }
 
 .new .col-3 p {
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 300;
     color: #8f8f8f;
     text-align: left;
@@ -559,7 +559,7 @@ body {
     color: #555;
     font-weight: 300;
     margin-left: 25px;
-    padding-top: 50px;
+    padding-top: 30px;
 }
 
 .event_wrap li p {
@@ -583,10 +583,11 @@ body {
     padding: 10px 25px;
     background-color: #fff;
     font-size: 14px;
-    color: #555;
+    color: #858585;
     border-radius: 30px;
-    border: 1px solid #a0a0a0;
+    border: 1px solid #dcdcdc;
     transition: all .2s ease-in-out;
+    font-weight: 300;
 
 }
 
@@ -702,7 +703,7 @@ body {
     font-size: 16px;
     font-weight: 300;
     padding: 0 20px;
-    padding-bottom: 50px;
+    padding-bottom: 40px;
     line-height: 1.5;
 }
 

@@ -8,15 +8,15 @@
 <body>
     <header class="head">
         <nav>
-            <a href="#">
-                <img class="logo" src="imgs/logo.png">
+            <a href="./nature_republic.html">
+                <p class="logo">NATURE REPUBLIC</p>
             </a>
             <ul class="menu">
                 <li>
                     <a href="#">브랜드</a>
                 </li>
                 <li>
-                    <a href="#">상품</a>
+                    <a href="./nature_republic_list.html">상품</a>
                 </li>
                 <li>
                     <a href="#">이벤트</a>
@@ -31,21 +31,30 @@
             <ul class="icon">
                 <li class="a1">
                     <a href="#">
+                        <span class="helper"></span>
                         <img src="imgs/top_icon1.png">
                     </a>
                 </li>
                 <li class="a2">
                     <a href="#">
-                        <img src="imgs/top_icon2.png">
+                        <div class="cart_inner">
+                            <span class="helper"></span>
+                            <img src="imgs/top_icon2.png">
+                            <div class="cart_number">
+                                <img src="imgs/cart_number.png">
+                                <p>0</p>
+                            </div>
+                        </div>
                     </a>
                 </li>
                 <li class="a3">
                     <a href="#">
+                        <span class="helper"></span>
                         <img src="imgs/top_icon3.png">
                     </a>
                 </li>
             </ul>
-        </nav>      
+        </nav>
     </header>
     
     <!-- PRODUCT -->
@@ -85,7 +94,7 @@
                 </div>
                 <div class="price">
                     <p class="a">판매가</p><p><span>24,900</span> 원</p><br>
-                    <p class="a">할인가</p><p><span class="won">19,200</span> 원</p>
+                    <p class="a">할인가</p><p><span class="won" id="id_color">19,200</span> 원</p>
                 </div>
                 
                 <div class="info">
@@ -98,7 +107,7 @@
                     </div>
                     <div class="number">
                         <p>수량<span>1</span></p>
-                        <p class="a">총 상품금액:<span class="total_price">19,200</span> 원</p>
+                        <p class="a">총 상품금액:<span class="total_price" id="id_color">19,200</span> 원</p>
                     </div>
                     <div class="button">
                         <ul class="clearfix">
@@ -109,7 +118,7 @@
                                     </a>
                                 </div>
                             </li>
-                            <li class="col-4">
+                            <li class="col-4 cart">
                                 <div>
                                     <a href="#">
                                         <img src="detail_img/cart.png"> &nbsp;<p>장바구니</p>
