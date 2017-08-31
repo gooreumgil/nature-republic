@@ -725,8 +725,71 @@ body {
 }
 
 /*===================
+	  NEWS LETTER
+===================*/
+
+.news_letter {
+    font-family: 'Noto Sans KR', sans-serif;
+    width: 100%;
+    height: 594px;
+    background-image: url(../imgs/news_letter_bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: top center;
+    text-align: center;
+    display: table;
+}
+
+.news_letter_box {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.news_letter_box h2 {
+    font-size: 38px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.news_letter_box .h2_sub {
+    font-size: 15px;
+    color: #fff;
+    font-weight: 200;
+    margin-top: 10px;
+}
+
+.news_letter_box .email_box {
+    display: block;
+}
+
+.news_letter_box .email {
+    display: inline-block;
+    font-size: 15px;
+    color: #a0a0a0;
+    font-weight: 200;
+    padding: 20px 165px;
+    background-color: #fff;
+    border-radius: 6px;
+    margin-bottom: 50px;
+    margin-top: 45px;
+}
+
+.news_letter_box .subscribe {
+    font-size: 16px;
+    font-weight: 300;
+    color: #fff;
+    padding: 12px 58px;
+    background-color: #7ebb34;
+    margin-top: 30px;
+    border-radius: 30px;
+}
+
+/*===================
 	  INSTAGRAM
 ===================*/
+
+/*
 
 .insta {
     font-family: 'Noto Sans KR', sans-serif;
@@ -774,12 +837,7 @@ body {
     -webkit-filter: brightness(106%);
 }
 
-
-
-
-
-
-
+*/
 
 /*===================
 	  BOTTOM
