@@ -28,10 +28,11 @@ li {
     font-family: 'Noto Sans KR', sans-serif;
     width: 100%;
     margin: 0 auto;
-    background: none;
+    background: #fff;
     z-index: 999;
     height: 90px;
-    border-bottom: 1px solid #eaeaea;
+    position: fixed;
+    box-shadow: 0 0 1px 0 #dcdcdc;
 }
 
 .head nav {
@@ -160,6 +161,11 @@ li {
 /*===================
 	  PRODUCT
 ===================*/
+
+.top_out {
+    width: 100%;
+    height: 90px;
+}
 
 .product {
     font-family: 'Noto Sans KR', sans-serif;
