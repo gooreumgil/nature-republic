@@ -28,9 +28,10 @@ li {
     width: 100%;
     margin: 0 auto;
     background: none;
-    position: absolute;
+    position: fixed;
     z-index: 999;
     height: 90px;
+    transition: background-color .5s ease-in-out;
 }
 
 .head nav {
@@ -126,7 +127,7 @@ li {
 }
 
 .icon .cart_inner {
-    
+
 }
 
 .icon .a2 div {
