@@ -25,7 +25,7 @@ $(document).ready(function() {
   var header = $('header');
   window.addEventListener('scroll', function(e){
     var scollY = window.scrollY;
-    if (scrollY > 300) {
+    if (scrollY > 50) {
       headerSetOverScroll(header);
     } else {
       headerSetDefault(header);
