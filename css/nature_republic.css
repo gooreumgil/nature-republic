@@ -145,7 +145,7 @@ li {
 
 .icon .a2 div .cart_number p {
     font-size: 11px;
-    color: #fff;
+    color: #7ebb34;
     font-weight: 300;
     position: absolute;
     z-index: 999;
@@ -773,12 +773,10 @@ body {
     border: 1px solid #dcdcdc;
     transition: all .2s ease-in-out;
     font-weight: 300;
-
 }
 
 .event_wrap .text_box a:hover {
-    color: #fff;
-    background-color: #71a532;
+    color: #71a532;
     border: 1px solid #71a532;
 }
 
