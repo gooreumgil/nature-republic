@@ -1,0 +1,3 @@
+[2017-09-05 14:24:59] layer "+": Expected Either a default asset specification or a layer asset specification but "+" found.
+[2017-09-05 14:24:59] layer "+": Expected Either a default asset specification or a layer asset specification but "+" found.
+[2017-09-05 14:24:59] layer "hunter407@naver.com": Unsupported extension: com
